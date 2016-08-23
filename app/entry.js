@@ -3,5 +3,33 @@ require('!!file?name=[name].[ext]!./html/index.html');
 require('./scss/base.scss');
 
 const angular = require('angular');
-angular.module('alphaApp', []);
-// require('./controller/controller_list');
+const alphaApp = angular.module('alphaApp', [require('angular-route')]);
+
+require('./controller')(alphaApp);
+
+alphaApp.config(['$routeProvider', function($routing) {
+  $routing
+  .when('/', {
+    templateUrl: 'app/templates/home_view.html',
+    controller: 'HomeController',
+    controllerAs: 'homeCtrl'
+  })
+  // .when('/about', {
+  //   templateUrl: 'app/templates/about_view.html',
+  //   controller: 'AboutController',
+  //   controllerAs: 'aboutCtrl'
+  // })
+  // .when('/services', {
+  //   templateUrl: 'app/templates/services_view.html',
+  //   controller: 'ServicesController',
+  //   controllerAs: 'servicesCtrl'
+  // })
+  .when('/book-now', {
+    templateUrl: 'app/templates/book_now_view.html',
+    controller: 'BookNowController',
+    controllerAs: 'bookNowCtrl'
+  });
+  // .otherwise({
+  //   redirectTo: '/'
+  // });
+}]);
