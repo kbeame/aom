@@ -2,34 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="bundle.css">
+
     <title>Alpha Omega Massage</title>
     <script src="bundle.js"></script>
+      <script src="app/scss/vendor/jquery1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body data-ng-app="alphaApp">
     <!-- pre-navbar -->
-    <div class="mini-header container">
+    <div class="mini-header">
       <ul class="position-right">
-        <li>206-555-5555</li>
+        <li><i class="fa fa-phone-square fa-lg"></i> 206-555-5555</li>
         <li>437 Relax St, Standwood, WA 98133</li>
-        <li>icon1</li>
-        <li>icon2</li>
+        <li><i class="fa fa-facebook-square fa-lg"></i></li>
+        <li><i class="fa fa-google-plus-square fa-lg"></i></li>
       </ul>
-    <div>
+    </div>
 <!-- navbar -->
     <div class="nav">
       <div class="container">
+        <div class="row"
         <ul class="navbar-header navbar-left">
           <li class="logo"><img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Farm-Fresh_file_save_as.png"></li>
-          <li class="name"><a href="#/">Alpha Omega Massage Therapy</a></li>
+          <li class="name"><h3><a href="#/">Alpha Omega Massage Therapy</a></h3></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="navbar-nav navbar-right">
           <li><a href="#/">Home</a></li>
           <li><a href="#/services">Services + Rates</a></li>
           <li><a href="#/book-now">Book Now</a></li>
           <li><a href="/#">Gift Certificates</a></li>
           <li><a href="/#/about">About</a></li>
         </ul>
+      </div>
       </div>
     </div>
 <main data-ng-view>

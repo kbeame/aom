@@ -6,6 +6,7 @@ const angular = require('angular');
 const alphaApp = angular.module('alphaApp', [require('angular-route')]);
 
 require('./controller')(alphaApp);
+// $('.carousel').carousel();
 
 alphaApp.config(['$routeProvider', function($routing) {
   $routing
