@@ -14,22 +14,22 @@ alphaApp.config(['$routeProvider', function($routing) {
     controller: 'HomeController',
     controllerAs: 'homeCtrl'
   })
-  // .when('/about', {
-  //   templateUrl: 'app/templates/about_view.html',
-  //   controller: 'AboutController',
-  //   controllerAs: 'aboutCtrl'
-  // })
-  // .when('/services', {
-  //   templateUrl: 'app/templates/services_view.html',
-  //   controller: 'ServicesController',
-  //   controllerAs: 'servicesCtrl'
-  // })
+  .when('/about', {
+    templateUrl: 'app/templates/about_view.html',
+    controller: 'AboutController',
+    controllerAs: 'aboutCtrl'
+  })
+  .when('/services', {
+    templateUrl: 'app/templates/services_view.html',
+    controller: 'ServicesController',
+    controllerAs: 'servicesCtrl'
+  })
   .when('/book-now', {
     templateUrl: 'app/templates/book_now_view.html',
     controller: 'BookNowController',
     controllerAs: 'bookNowCtrl'
+  })
+  .otherwise({
+    redirectTo: '/'
   });
-  // .otherwise({
-  //   redirectTo: '/'
-  // });
 }]);

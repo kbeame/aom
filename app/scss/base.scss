@@ -1,9 +1,9 @@
 @import "./vendor/bootstrap/stylesheets/_bootstrap.scss";
 @import "./vendor/font-awesome-4.6.3/scss/font-awesome.scss";
-$app-default: green;
-$app-primary: blue;
-$app-secondary: white;
-$moose: orange;
+$app-default: white;
+$app-primary: #8FB295;
+$app-secondary: #CCFED6;
+$moose: #415144;
 
 html, body {
   width: 100%;
@@ -12,14 +12,29 @@ html, body {
 body {
   background-color: $app-default;
 }
+.mini-header {
+  background-color: $app-primary;
+  color: $app-default;
+  height: 20px;
+  width: inherit;
+}
+.mini-header li {
+  display: inline;
+}
 
 .nav {
-  margin-top: 30px;
   background-color: $moose;
+  color: $app-default;
+  width: inherit;
+  // height: 30px;
 }
 
 .nav li {
   display: inline;
+}
+
+.nav a {
+  color: white;
 }
 .services .row {
   display: inline;
@@ -34,8 +49,20 @@ body {
 
 .footer, .push {
     height: 155px; /* .push must be the same height as .footer */
+    background-color: $app-secondary;// color: white;
 }
 
 .book-form {
   width: 50%;
+}
+
+.service-img {
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile {
+  width: 200px;
+  height: 200px;
 }
