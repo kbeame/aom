@@ -31,15 +31,19 @@ body {
   z-index: 1;
 }
 
-.nav:after {
-  position:fixed;
-  top: 0px;
-}
+// .nav:after {
+//   position:fixed;
+//   top: 0px;
+// }
 
 
 .nav li {
   display: inline;
-  margin-right: 1%;
+  padding: 10px;
+}
+
+.nav li:hover {
+  background-color: $app-secondary;
 }
 
 .nav a {
@@ -97,7 +101,7 @@ h3 {
 .about {
   background-color: $app-default;
   border-bottom: 6px solid $app-secondary;
-  width: inherit;
+  // width: inherit;
   padding-bottom: 30px;
 }
 
@@ -105,24 +109,9 @@ h3 {
   background-color: $moose;
   color: $app-default;
   // width: inherit;
-  padding-top: 30px;
+  // padding-top: 30px;
 }
 
 .philosophy p, .philosophy h2 {
    color: $app-default;
-}
-
-
-.parallax {
-    /* The image used */
-    background-color: url("../../img/forest.jpg");
-
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
