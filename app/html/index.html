@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="app/scss/vendor/jquery1.js"></script>
+    <script src="bundle.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="bundle.css">
 
     <title>Alpha Omega Massage</title>
-    <script src="bundle.js"></script>
-      <script src="app/scss/vendor/jquery1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body data-ng-app="alphaApp">
@@ -21,7 +21,7 @@
       </ul>
     </div>
 <!-- navbar -->
-    <div class="nav">
+    <div class="nav isStuck" data-spy="affix" data-offset-top="0">
       <div class="container">
         <div class="row"
         <ul class="navbar-header navbar-left">
