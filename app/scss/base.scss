@@ -1,5 +1,7 @@
 @import "./vendor/bootstrap/stylesheets/_bootstrap.scss";
 @import "./vendor/font-awesome-4.6.3/scss/font-awesome.scss";
+// @import "./header.scss";
+// @import "navbar.scss";
 $app-default: white;
 $app-primary: #8FB295;
 $app-secondary: #CCFED6;
@@ -11,14 +13,13 @@ html, body {
   height: 100%;
 }
 body {
-  // background-color: $app-default;
   color: black;
 }
 .mini-header {
   background-color: $app-primary;
   color: $app-default;
   height: 20px;
-  // width: inherit;
+
 }
 .mini-header li {
   display: inline;
@@ -29,12 +30,15 @@ body {
   color: $app-default;
   width: inherit;
   z-index: 1;
+  top: 0;
+}
+.navbar {
+  margin-bottom: 0px;
 }
 
-// .nav:after {
-//   position:fixed;
-//   top: 0px;
-// }
+.navbar-header {
+  // width: 50%;
+}
 
 
 .nav li {
@@ -54,16 +58,29 @@ body {
 }
 .services {
   background-color: $app-secondary;
-  // width: inherit;
+  width: inherit;
 }
 
 .tesimonials {
   background-color: $app-primary;
-  // width: inherit;
+  width: inherit;
+}
+footer {
+  width: 100%;
 }
 
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
+footer li {
+  list-style: none;
+  // border: px solid $app-secondary
+}
+
+.social li {
+  display: inline;
+}
+
+.footer {
+    margin-top: 20px;
+    height: 150px;
     background-color: $app-secondary;
     color: black;
 }
@@ -101,15 +118,12 @@ h3 {
 .about {
   background-color: $app-default;
   border-bottom: 6px solid $app-secondary;
-  // width: inherit;
   padding-bottom: 30px;
 }
 
 .philosophy {
   background-color: $moose;
   color: $app-default;
-  // width: inherit;
-  // padding-top: 30px;
 }
 
 .philosophy p, .philosophy h2 {

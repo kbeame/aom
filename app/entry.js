@@ -30,6 +30,11 @@ alphaApp.config(['$routeProvider', function($routing) {
     controller: 'BookNowController',
     controllerAs: 'bookNowCtrl'
   })
+  .when('/gift-card', {
+    templateUrl: 'app/templates/giftcard_view.html',
+    controller: 'GiftcardController',
+    controllerAs: 'giftcardCtrl'
+  })
   .otherwise({
     redirectTo: '/'
   });
