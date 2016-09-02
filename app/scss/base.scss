@@ -24,7 +24,9 @@ body {
 .mini-header li {
   display: inline;
 }
-
+a {
+  color: white;
+}
 .nav {
   background-color: $moose;
   color: $app-default;
@@ -34,23 +36,23 @@ body {
 }
 .navbar {
   margin-bottom: 0px;
+  color: $app-default;
 }
-
-.navbar-header {
-  // width: 50%;
+.navbar-default a {
+  color: $app-default;
 }
-
 
 .nav li {
   display: inline;
   padding: 10px;
+  color: $app-default;
 }
 
 .nav li:hover {
   background-color: $app-secondary;
 }
 
-.nav a {
+.nav li a {
   color: $app-default;
 }
 .services .row {
@@ -128,4 +130,72 @@ h3 {
 
 .philosophy p, .philosophy h2 {
    color: $app-default;
+}
+
+.booknowButton {
+  background-color: #8FB295;
+  color: #fefaf9;
+  border-radius: 4px;
+  padding: 18px 45px;
+  border: 1px solid #e9daca;
+  min-width: 150px;
+  width: 20%;
+  text-align: center;
+  // bottom: 0%;
+  right: 40%;
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+}
+
+.booknowButton a {
+  color: white;
+  background-color: inherit;
+}
+
+.booknowButton2 {
+  background-color: #8FB295;
+  color: #fefaf9;
+  border-radius: 4px;
+  padding: 18px 45px;
+  border: 1px solid #e9daca;
+  width: 20%;
+  min-width: 150px;
+  text-align: center;
+}
+.booknowButton2 a {
+  color: white;
+  background-color: inherit;
+}
+
+
+.lavender {
+  background-image: url("../../img/lavender-calmer.jpg");
+  height: 900px;
+  align-items: center;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  width: 100%;
+}
+.forest {
+  background-image: url("../../img/forest.jpg");
+  height: 600px;
+  align-items: center;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.massage-img {
+  width: 55%;
+  height: auto;
+  border: 4px solid $moose;
 }
