@@ -1,1 +1,1 @@
-web: npm i && node app/entry.js
+web: npm i && node entry.js
