@@ -1,13 +1,13 @@
 'use strict';
-// require('!!file?name=[name].[ext]!./html/index.html');
-require('./html/index.html');
+require('!!file?name=[name].[ext]!./html/index.html');
+// require('./html/index.html');
 require('./scss/base.scss');
 
 const angular = require('angular');
 const alphaApp = angular.module('alphaApp', [require('angular-route')]);
 
 require('./controller')(alphaApp);
-// $('.carousel').carousel();
+
 
 alphaApp.config(['$routeProvider', function($routing) {
   $routing
@@ -40,36 +40,6 @@ alphaApp.config(['$routeProvider', function($routing) {
     redirectTo: '/'
   });
 }]);
-
-
-// $(window).scroll(function(){
-//     $(".booknowButton").css("top", Math.max(0, 550 - $(this).scrollTop()));
-//     // $(".booknowButton").css("top", Math.max(0, 250 - $(this).scrollTop())
-// });
-
-
-
-// $.fn.followTo = function (pos) {
-//     var $this = this,
-//         $window = $(window);
-//
-//     $window.scroll(function (e) {
-//         if ($window.scrollTop() > pos) {
-//             $this.css({
-//                 position: 'absolute',
-//                 top: pos
-//             });
-//         } else {
-//             $this.css({
-//                 position: 'fixed',
-//                 top: 0
-//             });
-//         }
-//     });
-// };
-//
-// $('.booknowButton').followTo(250);
-
 
 
 var isVisible = false;
