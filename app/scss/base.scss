@@ -27,33 +27,114 @@ body {
 a {
   color: white;
 }
-.nav {
-  background-color: $moose;
-  color: $app-default;
-  width: inherit;
-  z-index: 1;
-  top: 0;
-}
-.navbar {
-  margin-bottom: 0px;
-  color: $app-default;
-}
-.navbar-default a {
-  color: $app-default;
+
+#webapp-title {
+    color: $app-default;
+    font-family: serif;
+    font-size: 1.5em;
+    letter-spacing: 3px;
 }
 
-.nav li {
-  display: inline;
-  padding: 10px;
-  color: $app-default;
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    background: $moose;
+}
+.nav-block {
+    display: none;
+    align-items: center;
+    background: $app-secondary;
+    padding-right: 30px;
 }
 
-.nav li:hover {
-  background-color: $app-secondary;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
 
-.nav li a {
-  color: $app-default;
+#main-logo {
+  max-width: 90px;
+  max-height: 110px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 940px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+  .nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $app-secondary;
+    width: 100%;
+    height: 30px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+  .nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $app-secondary;
+    width: 100%;
+    height: 100px;
+  }
+
+}
+
+
+// .nav {
+//   background-color: $moose;
+//   color: $app-default;
+//   width: inherit;
+//   z-index: 1;
+//   top: 0;
+// }
+// .navbar {
+//   margin-bottom: 0px;
+//   color: $app-default;
+// }
+// .navbar-default a {
+//   color: $app-default;
+// }
+//
+// .nav li {
+//   display: inline;
+//   padding: 10px;
+//   color: $app-default;
+// }
+//
+// .nav li:hover {
+//   background-color: $app-secondary;
+// }
+//
+// .nav li a {
+//   color: $app-default;
 }
 .services .row {
   display: inline;
@@ -198,9 +279,4 @@ h2 {
   width: 55%;
   height: auto;
   border: 4px solid $moose;
-}
-
-.logo {
-  width: 15%;
-  height: auto;
 }
