@@ -9,8 +9,9 @@ $moose: #415144;
 $large-font: #5B625A;
 
 html, body {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
+  font-family: 'Crete Round', serif;
 }
 body {
   color: black;
@@ -18,7 +19,7 @@ body {
 .mini-header {
   background-color: $app-primary;
   color: $app-default;
-  height: 20px;
+  height: 25px;
 
 }
 .mini-header li {
@@ -28,38 +29,64 @@ a {
   color: white;
 }
 
-#webapp-title {
-    color: $app-default;
-    font-family: serif;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-}
-
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 100%;
-    background: $moose;
-}
-.nav-block {
-    display: none;
-    align-items: center;
-    background: $app-secondary;
-    padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // max-width: 100%;
+  background: $moose;
+  text-align: center;
+  z-index: 1;
+  border-bottom: 2px solid $large-font;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+
+.header-background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #main-logo {
-  max-width: 90px;
-  max-height: 110px;
+  max-width: 200px;
+  max-height: 200px;
   padding-top: 15px;
+  padding-right: 10px;
   padding-bottom: 10px;
+}
+
+#webapp-title {
+    color: white;
+    font-family: 'Crete Round', serif;
+    font-size: 2.6em;
+    letter-spacing: 3px;
+}
+
+
+
+.spacing {
+  color: white;
+  font-size: 2.6em;
+  font-family: 'Almendra SC', serif;
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+  background: $moose;
+  padding-right: 30px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li {
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (max-width: 940px) {
@@ -77,10 +104,35 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $app-secondary;
+    background: $moose;
     width: 100%;
     height: 30px;
   }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+  .nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $moose;
+    width: 100%;
+    height: 30px;
+  }
+
+
+
+
 }
 
 
@@ -96,13 +148,35 @@ nav ul {
     background: $moose;
   }
 
+
+.header-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   .nav-block {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $app-secondary;
+    background: $moose;
     width: 100%;
     height: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
   }
 
 }
@@ -135,7 +209,7 @@ nav ul {
 //
 // .nav li a {
 //   color: $app-default;
-}
+// }
 .services .row {
   display: inline;
 }
