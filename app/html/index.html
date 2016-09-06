@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="app/scss/vendor/jquery1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Almendra" rel="stylesheet">
     <script src="bundle.js"></script>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,42 +16,32 @@
     <!-- pre-navbar -->
     <div class="mini-header" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
       <ul class="navbar-right">
+        <a href="tel:1-206-331-7230">
         <li><i class="fa fa-phone-square fa-lg"></i> 206-555-5555</li>
+        </a>
+        <a target="_blank" href="https://www.google.com/maps/place/Alpha+Omega+Massage+Therapy/@48.271636,-122.3072997,17z/data=!4m13!1m7!3m6!1s0x54855ccf94f505b1:0xa95123b6b70001c!2s30327+56th+Ave+NW,+Stanwood,+WA+98292!3b1!8m2!3d48.271636!4d-122.305111!3m4!1s0x54855ccf94f505b1:0x5e40360a9dbdc0a7!8m2!3d48.271636!4d-122.305111">
         <li>437 Relax St, Standwood, WA 98133</li>
+        </a>
         <li><i class="fa fa-facebook-square fa-lg"></i></li>
-        <li><i class="fa fa-google-plus-square fa-lg"></i></li>
       </ul>
     </div>
 
-    <nav class="navbar nav navbar-default" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#navbar-collapse"
-              aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#/home"><img class="logo" src="../img/logo.png" alt="logo" /></a>
-            <a class="navbar-brand" href="#/home"> Alpha Omega Massage Therapy</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="navbar-nav">
-              <li><a href="#/">Home</a></li>
-              <li><a href="#/services">Services + Rates</a></li>
-              <li><a href="#/book-now">Book Now</a></li>
-              <li><a href="/#/gift-card">Gift Certificates</a></li>
-              <li><a href="/#/about">About</a></li>
-            </ul>
-          </div>
-        </div>
+  <header class="col-sm-12" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+    <div class="header-background">
+      <a href="#/home"><img id="main-logo" src="../img/logo.png" alt="Alpha Omega Massage logo" /></a>
+      <a href="#/home"><h1 id="webapp-title"><span class="spacing">A</span>lpha Omega Massage Therapy</h1></a>
+    </div>
+    <div class="nav-block">
+      <nav>
+        <ul>
+          <li><a href="#/services">Home</a></li>
+          <li><a href="#/services">Services</a></li>
+          <li><a href="#/book-now">Book Now</a></li>
+          <li><a href="/#/about">About</a></li>
+        </ul>
       </nav>
-
+    </div>
+  </header>
 
 <!-- views -->
 <main data-ng-view>

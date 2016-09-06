@@ -9,8 +9,9 @@ $moose: #415144;
 $large-font: #5B625A;
 
 html, body {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
+  font-family: 'Crete Round', serif;
 }
 body {
   color: black;
@@ -18,43 +19,211 @@ body {
 .mini-header {
   background-color: $app-primary;
   color: $app-default;
-  height: 20px;
+  height: 25px;
 
 }
 .mini-header li {
   display: inline;
 }
+
+// .fa-lg {
+//   padding-right: 10px;
+// }
+
 a {
   color: white;
 }
-.nav {
-  background-color: $moose;
-  color: $app-default;
-  width: inherit;
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // max-width: 100%;
+  background: $moose;
+  text-align: center;
   z-index: 1;
-  top: 0;
-}
-.navbar {
-  margin-bottom: 0px;
-  color: $app-default;
-}
-.navbar-default a {
-  color: $app-default;
+  border-bottom: 2px solid $large-font;
 }
 
-.nav li {
-  display: inline;
-  padding: 10px;
-  color: $app-default;
+
+.header-background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.nav li:hover {
-  background-color: $app-secondary;
+#main-logo {
+  max-width: 200px;
+  max-height: 200px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
-.nav li a {
-  color: $app-default;
+#webapp-title {
+    color: white;
+    font-family: 'Almendra', serif;
+    font-size: 2.6em;
+    letter-spacing: 3px;
 }
+
+
+
+.spacing {
+  color: white;
+  font-size: 2.6em;
+  font-family: 'Almendra', serif;
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+  background: $moose;
+  padding-right: 30px;
+  font-size: 1.6em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li {
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 940px) {
+
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+  .nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $moose;
+    width: 100%;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .affix {
+    width: 100%;
+  }
+  .test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+  .nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $moose;
+    width: 100%;
+    height: 30px;
+    font-size: 1.0em;
+  }
+  #main-logo {
+    max-width: 120px;
+    max-height: 120px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
+  #webapp-title {
+      color: white;
+      font-family: 'Almendra', serif;
+      font-size: 2.0em;
+      letter-spacing: 3px;
+  }
+
+
+
+
+
+}
+
+
+
+@media (max-width: 450px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background: $moose;
+  }
+
+#main-logo {
+  max-width: 100px;
+  max-height: 100px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+#webapp-title {
+    color: white;
+    font-family: 'Almendra', serif;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+}
+
+  .nav-block {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: $moose;
+    width: 100%;
+    height: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+}
+
+
+
 .services .row {
   display: inline;
 }
@@ -73,7 +242,6 @@ footer {
 
 footer li {
   list-style: none;
-  // border: px solid $app-secondary
 }
 
 .social li {
@@ -198,9 +366,4 @@ h2 {
   width: 55%;
   height: auto;
   border: 4px solid $moose;
-}
-
-.logo {
-  width: 15%;
-  height: auto;
 }
