@@ -490,3 +490,22 @@ h2 {
   color: white;
   font-size: 1.3em;
 }
+
+//book now
+
+.book-now-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.form-section {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // align-items: center;
+  // width: 100%;
+}
