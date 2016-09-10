@@ -519,7 +519,7 @@ h2 {
   height: 400px;
   margin: 2%;
 }
-2
+
 .book-form {
   width: 100%;
   flex-direction: row;
@@ -529,3 +529,21 @@ h2 {
 .booking p {
   font-size: 1.3em;
 }
+
+
+// Services
+.prices {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+  // align-items: center;
+  width: 80%;
+}
+
+// .outer-container {
+//   display: flex;
+//   flex-direction: row;
+//   // justify-content: center;
+//   // align-items: center;
+//   width: 100%;
+// }
