@@ -13,6 +13,10 @@ html, body {
   height: 100%;
   font-family: 'Crete Round', serif;
 }
+
+blockquote {
+    border-left: none;
+}
 body {
   color: black;
 }
@@ -30,7 +34,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  // max-width: 100%;
   background: $moose;
   text-align: center;
   z-index: 1;
@@ -60,7 +63,13 @@ header {
     letter-spacing: 3px;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Almendra', serif;
+}
 
+h2 {
+  font-family: 'Almendra', serif;
+}
 
 .spacing {
   color: white;
@@ -165,6 +174,13 @@ nav ul li {
 
 @media (max-width: 450px) {
 
+  .zen {
+    width: auto;
+    height: 100px;
+    margin: 2%;
+    border: 4px solid $moose;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -248,9 +264,6 @@ footer li {
     color: black;
 }
 
-.book-form {
-  width: 50%;
-}
 
 .service-img {
   width: 170px;
@@ -270,7 +283,6 @@ p {
 
 h2 {
   color: $large-font;
-  font-family: serif;
   font-size: 3em;
 }
 
@@ -350,6 +362,8 @@ h3 {
   width: 100%;
 }
 
+
+
 h2 {
   text-align: center;
 }
@@ -428,4 +442,90 @@ h2 {
   max-width: 430px;
   height: auto;
   border: 4px solid $moose;
+}
+
+
+//philosophy
+
+.philo-goal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  // margin-bottom: 2%;
+}
+
+.zen {
+  width: auto;
+  height: 300px;
+  margin: 2%;
+  border: 4px solid $moose;
+}
+
+.para {
+  width: 80%;
+}
+.para2 {
+  width: 80%;
+}
+.goal {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space;
+}
+
+.philo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.philo1 h3 {
+  color: white;
+  font-size: 2.0em;
+}
+
+.philo1 li {
+  color: white;
+  font-size: 1.6em;
+}
+
+.philo1 p {
+  color: white;
+  font-size: 1.3em;
+}
+
+//book now
+
+.book-now-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.form-section {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.massage-photo {
+  width: auto;
+  height: 400px;
+  margin: 2%;
+}
+2
+.book-form {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.booking p {
+  font-size: 1.3em;
 }
