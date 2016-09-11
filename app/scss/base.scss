@@ -514,6 +514,14 @@ h2 {
   width: 100%;
 }
 
+.book-now-section a {
+  color: white;
+  background-color: $moose;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+}
+
 .form-section {
   margin: 1%;
   display: flex;
@@ -552,6 +560,8 @@ h2 {
 .prices h4 {
   font-size: 1.4em;
 }
+
+
 .outer-container {
   display: flex;
   flex-direction: row;
@@ -565,4 +575,33 @@ min-width: 300px;
 
 .right-prices {
 min-width: 300px;
+}
+
+//insurance
+.insurance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $app-secondary;
+  width: 100%;
+}
+
+.insurance-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.books {
+  text-align: center;
+  font-size: 1.3em;
+}
+.books a {
+  color: white;
+  background-color: $moose;
+  border-radius: 10px;
+  padding: .75%;
+  margin: 4%;
+  font-size: 1.1em;
 }
