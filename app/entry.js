@@ -1,6 +1,5 @@
 'use strict';
 require('!!file?name=[name].[ext]!./html/index.html');
-// require('./html/index.html');
 require('./scss/base.scss');
 
 const angular = require('angular');
@@ -11,25 +10,20 @@ require('./controller')(alphaApp);
 
 alphaApp.config(['$routeProvider', function($routing) {
   $routing
-  .when('/', {
+  .when('/home', {
     templateUrl: 'app/templates/home_view.html',
     controller: 'HomeController',
     controllerAs: 'homeCtrl'
   })
   .otherwise({
-    redirectTo: '/'
+    redirectTo: '/home'
   });
 }]);
 
-
-var isVisible = false;
-$(window).scroll(function(){
-     var shouldBeVisible = $(window).scrollTop()<2400;
-     if (shouldBeVisible && !isVisible) {
-          isVisible = true;
-          $('.booknowButton').show();
-     } else if (isVisible && !shouldBeVisible) {
-          isVisible = false;
-          $('.booknowButton').hide();
-    }
+alphaApp.run(function($rootScope, $location, $anchorScroll, $routeParams) {
+  //when the route is changed scroll to the proper element.
+  $rootScope.$on('$routeChangeSuccess', function(newRoute, oldRoute) {
+    $location.hash($routeParams.scrollTo);
+    $anchorScroll();
+  });
 });
