@@ -11,7 +11,7 @@ require('./controller')(alphaApp);
 alphaApp.config(['$routeProvider', function($routing) {
   $routing
   .when('/home', {
-    templateUrl: 'templates/home_view.html',
+    template: require('./templates/home_view.html'),
     controller: 'HomeController',
     controllerAs: 'homeCtrl'
   })
