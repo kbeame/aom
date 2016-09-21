@@ -7808,6 +7808,12 @@ h2 {
   background-color: #CCFED6;
   width: 100%; }
 
+.insurance li {
+  font-size: 1.4em; }
+
+.insurance p {
+  font-size: 1.4em; }
+
 .insurance-container {
   display: -webkit-box;
   display: -ms-flexbox;
