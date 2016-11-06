@@ -7888,3 +7888,10 @@ footer li {
 .smaller-words {
   font-size: .75em;
   margin-bottom: 0px; }
+
+.right-small {
+  margin-left: 85%;
+  color: #5B625A; }
+
+.right-small a {
+  color: #5B625A; }
