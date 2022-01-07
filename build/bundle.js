@@ -103,7 +103,7 @@
 /* 19 */
 /***/ function(module, exports) {
 
-	eval("'use strict';\n\nmodule.exports = function (app) {\n  app.controller('headerCtrl', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) {\n    $scope.gotoAnchor = function (id) {\n      $location.hash(id);\n      $anchorScroll();\n    };\n  }]);\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/controller/home_controller.js\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/controller/home_controller.js?");
+	eval("'use strict';\n\nmodule.exports = function (app) {\n  app.controller('homeCtrl', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) {\n    $scope.gotoAnchor = function (id) {\n      $location.hash(id);\n      $anchorScroll();\n    };\n  }]);\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/controller/home_controller.js\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/controller/home_controller.js?");
 
 /***/ },
 /* 20 */

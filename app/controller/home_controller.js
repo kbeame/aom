@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-  app.controller('headerCtrl',
+  app.controller('homeCtrl',
   ['$anchorScroll', '$location', '$scope',
   function($anchorScroll, $location, $scope) {
     $scope.gotoAnchor = function(id) {
