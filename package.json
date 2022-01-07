@@ -4,7 +4,7 @@
   "description": "Alpha Omega Massage Therapy",
   "main": "server.js",
   "engines": {
-  "node": "4.x"
+    "node": "4.x"
   },
   "scripts": {
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
@@ -16,7 +16,17 @@
     "type": "git",
     "url": "git+https://github.com/kbeame/aom.git"
   },
-  "keywords": ["massage", "therapy", "alpha", "omega", "stanwood", "Regence", "Alpha Omega Massage Therapy", "snohomish", "lomi lomi"],
+  "keywords": [
+    "massage",
+    "therapy",
+    "alpha",
+    "omega",
+    "stanwood",
+    "Regence",
+    "Alpha Omega Massage Therapy",
+    "snohomish",
+    "lomi lomi"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
