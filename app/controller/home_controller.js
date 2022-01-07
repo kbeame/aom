@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = function(app) {
-  app.controller('HomeController', [
-    '$scope', '$location', '$anchorScroll',
-    function($scope, $location, $anchorScroll) {
-      $scope.scrollTo = function(id) {
-        $location.hash(id);
-        $anchorScroll();
-      };
-
-    }]);
+  app.controller('headerCtrl',
+  ['$anchorScroll', '$location', '$scope',
+  function($anchorScroll, $location, $scope) {
+    $scope.gotoAnchor = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+    };
+  }
+]);
 };
