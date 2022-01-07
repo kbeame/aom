@@ -7794,7 +7794,7 @@ h2 {
 .right-prices {
   min-width: 300px; }
 
-.insurance {
+.covid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7808,13 +7808,13 @@ h2 {
   background-color: #CCFED6;
   width: 100%; }
 
-.insurance li {
+.covid li {
   font-size: 1.4em; }
 
-.insurance p {
+.covid p {
   font-size: 1.4em; }
 
-.insurance-container {
+.covid-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
