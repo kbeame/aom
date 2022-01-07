@@ -581,22 +581,22 @@ min-width: 300px;
 min-width: 300px;
 }
 
-//insurance
-.insurance {
+//covid
+.covid {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $app-secondary;
   width: 100%;
 }
-.insurance li {
+.covid li {
   font-size: 1.4em;
 }
-.insurance p {
+.covid p {
   font-size: 1.4em;
 }
 
-.insurance-container {
+.covid-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
